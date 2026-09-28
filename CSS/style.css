@@ -60,6 +60,11 @@ form .display input {
 form input.equal {
   width: 145px;
 }
+@media (max-width: 767px) {
+  form input.equal {
+    width: 75px;
+  }
+}
 form input.operator {
   color: #ffeb3b;
   background: #ff5722;
