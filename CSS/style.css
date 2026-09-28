@@ -1,60 +1,77 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
-    width: 100%;
-    height: 100vh;
-    background: #e3f9ff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+  width: 100%;
+  height: 100vh;
+  background: #e3f9ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* medium screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* large screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
 .calculator {
-    background: #3a4452;
-    padding: 20px;
-    border-radius: 10px;
+  background: #3a4452;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .calculator form input {
-    padding: 20px;
-    font-size: 18px;
-    color: #fff;
-    border: 0;
-    outline: 0;
-    border-radius: 10px;
-    background: transparent;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    box-shadow: -8px -8px 15px rgba(255,255, 255, .1),5px 5px 15px rgba(0, 0, 0, .2);
-    margin: 10px;
-    width: 60px;
-    height: 60px;
+  padding: 20px;
+  font-size: 18px;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow:
+    -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  width: 60px;
+  height: 60px;
 }
 
 form .display {
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
 }
 form .display input {
-    text-align: right;
-    flex: 1;
-    font-size: 45px;
-    box-shadow: none;
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
 }
 form input.equal {
-    width: 145px;
+  width: 145px;
 }
 form input.operator {
-    color: #FFEB3B;
-    background: #FF5722;
+  color: #ffeb3b;
+  background: #ff5722;
 }
 form .display input.value {
-    border: 1px solid #fff;
+  border: 1px solid #fff;
 }
